@@ -117,7 +117,6 @@ try:
         # 2) Open the pull requests page
         pr_url = f"{repo_url}/pulls"
         driver.get(pr_url)
-        time.sleep(2)
 
         # 3) Check for "Feedback" PR with "Submitted" label
         feedback_selector = (
