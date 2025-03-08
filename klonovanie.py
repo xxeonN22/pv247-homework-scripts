@@ -206,7 +206,7 @@ close_and_clear_vscode() {
 
     echo "➡️ Removing VSCode cache..."
     rm -rf ~/.config/Code/Cache 2>/dev/null
-    rm -rf ~/.config/Code/Code\\ Cache 2>/dev/null
+    rm -rf ~/.config/Code/Code\ Cache 2>/dev/null
     rm -rf ~/.config/Code/workspaceStorage 2>/dev/null
 }
 
@@ -214,6 +214,9 @@ close_and_clear_vscode() {
 # Start processing each repository
 ################################################
 for repo in */; do
+    # Remove trailing slash from repo name
+    repo=${repo%/}
+
     # Skip if it's not a directory
     [ ! -d "$repo" ] && continue
 
@@ -229,15 +232,22 @@ for repo in */; do
     echo "REPOSITORY: $repo"
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-    # Close VSCode windows and clear cache before opening new instance
+    # Construct the GitHub PR files URL dynamically
+    GITHUB_PR_FILES_URL="https://github.com/FI-PV247/$repo/pull/1/files"
+
+    # Open the GitHub PR files page in Chrome (suppress errors)
+    echo "🌍 Opening GitHub PR Files: $GITHUB_PR_FILES_URL"
+    google-chrome "$GITHUB_PR_FILES_URL" 2>/dev/null &
+
+    # Close VSCode windows and clear cache before opening a new instance
     close_and_clear_vscode
 
     # Enter the repo directory
     cd "$repo" || continue
 
-    # 1) Open VS Code (new window) for this repo
+    # 1) Open VS Code (new window) for this repo (suppress errors)
     echo "➡️ Opening Visual Studio Code..."
-    code -n . &
+    code -n . 2>/dev/null &
     # Give VS Code time to open
     sleep 10
 
@@ -271,6 +281,14 @@ for repo in */; do
         xdotool key Return
 
         echo "⏳ Waiting for Next.js to pick an open port (3000..3010)..."
+        
+        # Wait a few seconds for Next.js to initialize
+        sleep 5 
+
+        # Open localhost:3000 in Chrome (suppress errors)
+        echo "🌍 Opening localhost:3000"
+        google-chrome "http://localhost:3000" 2>/dev/null &
+
         echo " WHEN FINISHED:"
         echo "   1. Close the integrated terminal in VS Code (this kills 'npm run dev')."
         echo "   2. Press ENTER here to move on to the next repository."
