@@ -6,6 +6,13 @@ Script will **kill all the Chrome instances** - in other words - close all the c
 
 When reviewing homework, you should put **H(h)odnotenie** or **H(h)odnoceni** or **E(e)valuation** inside pull request so the script will skip this repository when cloning / skip this repository when processing repositories.
 
+<details>
+  <summary>Click to see, what it should look like</summary>
+  
+![image](https://github.com/user-attachments/assets/6f92800d-0fad-4c50-9fa6-4efc99d96111)
+
+</details>
+
 If the script **wont start cloning repositories**, just terminate the current run of the script and **run it again**.
 
 ## How to run the scripts 
