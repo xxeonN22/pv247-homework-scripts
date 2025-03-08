@@ -1,0 +1,3 @@
+gitpython
+selenium
+webdriver-manager
