@@ -133,7 +133,6 @@ try:
 
             # Go to that PR page
             driver.get(feedback_link)
-            time.sleep(2)
 
             # 4) Check if the review contains "hodnotenie", "hodnoceni", or "evaluation"
             review_xpaths = (
