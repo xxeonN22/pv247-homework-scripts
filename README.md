@@ -4,6 +4,8 @@
 
 When reviewing homework, you should put **H(h)odnotenie** or **H(h)odnoceni** or **E(e)valuation** inside pull request so the script will skip this repository when cloning / skip this repository when processing repositories.
 
+If the script wont start cloning repositories, just terminate the current run of the script and run it again.
+
 ## How to run the scripts 
 
 #### 0. Before running scripts
