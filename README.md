@@ -4,6 +4,8 @@
 
 Script will **kill all the Chrome instances** - in other words - close all the chrome TABS, because it needs to connect to the chosen chrome Profile - in my case the Default profile and would not work properly without it. It runs in debug mode and uses Default profile as mentioned so it will use github session as I am logged in on github in this profile. Without that, you would have to provide passkey or SMS code (if you are using 2FA like me) to log in to the github to be able to enter PV247 site and clone repositories.
 
+You can find out the name of the profile using `ls ~/.config/google-chrome/`.
+
 When reviewing homework, you should put **H(h)odnotenie** or **H(h)odnoceni** or **E(e)valuation** inside pull request so the script will skip this repository when cloning / skip this repository when processing repositories.
 
 <details>
