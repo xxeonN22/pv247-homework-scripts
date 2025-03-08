@@ -1,4 +1,15 @@
 # How to run the scripts 
+#### 0. Before runing the scripts...
+You will need to adjust the chrome profile at this section inside `run_script.sh` at `--profile-directory...`.
+
+```# Start Chrome in debug mode (if not already running)
+if ! pgrep -f "chrome.*remote-debugging-port=9222" > /dev/null; then
+    echo "🚀 Starting Chrome in debug mode..."
+    google-chrome --remote-debugging-port=9222 \
+                  --user-data-dir="/home/samuel/.config/google-chrome/" \
+                  --profile-directory="Default" \
+                  --disable-gpu 2>/dev/null &
+```
 
 ####  1. Clone the repository  
  ```git clone git@github.com:xxeonN22/pv247-homework-scripts.git```
