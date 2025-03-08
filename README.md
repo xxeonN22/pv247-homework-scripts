@@ -2,7 +2,6 @@
 
 ## How to run the scripts 
 
-#### <span style="color: red;">This is red text</span>
 You will **need to adjust the chrome profile** at this section inside `run_script.sh` at `--profile-directory...` if you want to use
 other profile then Default or it is located inside other folder.
 
