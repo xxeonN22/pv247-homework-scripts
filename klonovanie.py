@@ -247,17 +247,17 @@ for repo in */; do
     echo "➡️ Opening Visual Studio Code..."
     code -n . 2>/dev/null &
     # Give VS Code time to open
-    sleep 10
+    sleep 5
 
     # 2) Focus the VS Code window
     echo "➡️ Focusing the VS Code window..."
     wmctrl -a "Visual Studio Code"
-    sleep 2
+    sleep 1
 
     # 3) Open integrated terminal in VS Code
     echo "➡️ Opening integrated terminal..."
     xdotool key alt+n
-    sleep 5  # Let terminal appear
+    sleep 2  # Let terminal appear
 
     # 4) Type the commands
     if [ "$MODE" == "build" ]; then
