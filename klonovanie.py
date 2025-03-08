@@ -201,11 +201,6 @@ fi
 close_and_clear_vscode() {
     echo "➡️ Closing all VS Code windows..."
     pkill code 2>/dev/null
-
-    echo "➡️ Removing VSCode cache..."
-    rm -rf ~/.config/Code/Cache 2>/dev/null
-    rm -rf ~/.config/Code/Code\ Cache 2>/dev/null
-    rm -rf ~/.config/Code/workspaceStorage 2>/dev/null
 }
 
 ################################################
