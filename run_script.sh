@@ -7,7 +7,7 @@ if [ $# -ne 3 ]; then
     exit 1
 fi
 
-HOMEWORK_URL=$1
+HOMEWORK_URL=$(echo "$1" | sed 's/\\//g')
 HOMEWORK_FOLDER=$2
 HOMEWORK_NUMBER=$3
 

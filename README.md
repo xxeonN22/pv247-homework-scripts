@@ -6,10 +6,6 @@ When reviewing homework, you should put **H(h)odnotenie** or **H(h)odnoceni** or
 
 If the script **wont start cloning repositories**, just terminate the current run of the script and **run it again**.
 
-If you copy the URL like this for example `https://pv247-app.vercel.app/lector/homeworks/styling?type=own` make sure it is like this in terminal as well and 
-not like this `https://pv247-app.vercel.app/lector/homeworks/styling\?type\=own`. If it is like this:  
-  **DELETE THAT \ from the URL**.
-
 ## How to run the scripts 
 
 #### 0. Before running scripts
