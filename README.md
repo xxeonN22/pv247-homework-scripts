@@ -47,7 +47,9 @@ If u want to be moved to the `cloned_repos` directory automatically after clonin
 
 <details>
   <summary>This is how it looks like, when you will clone the repositories you havent reviewed yet.</summary>
+  
   ![image](https://github.com/user-attachments/assets/854deb72-477d-4023-99d6-28b1aa962e82)
+  
 </details>
 
 <details>
@@ -56,6 +58,7 @@ If u want to be moved to the `cloned_repos` directory automatically after clonin
 the next time you will run the script.
 
 ![image](https://github.com/user-attachments/assets/b8401c29-fdb6-4d8d-98c0-213198299a8b)
+
 </details>
 
 <details>
@@ -74,6 +77,7 @@ the next time you will run the script.
 the next time you will run the script.
 
 ![image](https://github.com/user-attachments/assets/ecae9817-151b-4943-93e6-5a1b75afd209)
+
 </details>
 
 If u run the script using `source` you will be already inside `cloned_repos` folder as mentioned at 5th. step.
@@ -90,6 +94,7 @@ Now you can run another script `run_repos.sh` using either `dev` or `build`
 the next time you will run the script.
 
 ![image](https://github.com/user-attachments/assets/488a0d8f-9201-42d7-b20e-bad5162956bb)
+
 </details>
 
 As mentioned earlier, it will open VSC with intergrated terminal where it will put the command either `npm install && npm run build` or `npm install && npm run dev` based on the argument when runing script.
