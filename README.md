@@ -83,6 +83,7 @@ Now you can run another script `run_repos.sh` using either `dev` or `build`
 
 ```./run_repos.sh build``` - suitable for first homework - typescript
  * Runing this should open VSC, open intergrated terminal, write npm install && npm run build, open URL with student's pull request
+
 ```./run_repos.sh dev```
  * Runing this should open VSC, open intergrated terminal, write npm install && npm run dev, open URL with student's pull request and also server on localhost:3000
 
