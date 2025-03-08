@@ -2,7 +2,9 @@
 
 ## How to run the scripts 
 
-You will **need to adjust the chrome profile** at this section inside `run_script.sh` at `--profile-directory...` if you want to use
+#### 0. Before running scripts
+
+You will probably **need to adjust the chrome profile** at this section of the code inside `run_script.sh` at `--profile-directory...` if you want to use
 other profile then Default or it is located inside other folder.
 
 <details>
