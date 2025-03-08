@@ -1,5 +1,9 @@
 # PV247 - Helpful scripts for evaluation of homeworks
 
+### Things to be aware of before running scripts - 
+
+When reviewing homework, you should put **H(h)odnotenie** or **H(h)odnoceni** or **E(e)valuation** inside pull request so the script will skip this repository when cloning / skip this repository when processing repositories.
+
 ## How to run the scripts 
 
 #### 0. Before running scripts
