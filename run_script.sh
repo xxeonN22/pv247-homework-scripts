@@ -91,8 +91,8 @@ echo "✅ Activating virtual environment..."
 source venv/bin/activate
 
 # Install dependencies if not installed
-echo "📦 Installing required Python packages..."
-pip install -r requirements.txt
+echo "📦 Installing required Python packages (only if missing)..."
+pip install --quiet --requirement requirements.txt --no-warn-script-location --disable-pip-version-check 2>&1 | grep -v 'Requirement already satisfied'
 
 
 # Run your Python script with dynamic arguments
