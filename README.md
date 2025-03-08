@@ -11,9 +11,13 @@ When reviewing homework, you should put **H(h)odnotenie** or **H(h)odnoceni** or
   
 ![image](https://github.com/user-attachments/assets/6f92800d-0fad-4c50-9fa6-4efc99d96111)
 
+![image](https://github.com/user-attachments/assets/6cc20f26-df2e-4844-b204-1414a8f1df8b)
+
 </details>
 
 If the script **wont start cloning repositories**, just terminate the current run of the script and **run it again**.
+
+Some parts of the scripts use extended `sleep` or `wait` time. If u are runing the scripts on better machine and you feel like it takes longer then it should, you can lower down these and it will become quicker.
 
 ## How to run the scripts 
 
