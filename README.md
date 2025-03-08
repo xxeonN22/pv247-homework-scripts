@@ -73,8 +73,6 @@ the next time you will run the script.
 #### 7. Run the script to process repositories one by one
 <details>
   <summary>After cloning repositories, you will see something like this</summary>
-  When the script will find out, that pull request contains `H(h)odnotenie` or `H(h)odnoceni` or `E(e)valuation` keyword, it will be marked as already reviewed and put inside `reviewed_repos.txt` file so it will not go through
-the next time you will run the script.
 
 ![image](https://github.com/user-attachments/assets/ecae9817-151b-4943-93e6-5a1b75afd209)
 
