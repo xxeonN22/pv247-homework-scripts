@@ -280,11 +280,6 @@ for repo in */; do
         xdotool type --delay 50 "npm install && npm run dev"
         xdotool key Return
 
-        echo "⏳ Waiting for Next.js to pick an open port (3000..3010)..."
-        
-        # Wait a few seconds for Next.js to initialize
-        sleep 5 
-
         # Open localhost:3000 in Chrome (suppress errors)
         echo "🌍 Opening localhost:3000"
         google-chrome "http://localhost:3000" 2>/dev/null &
