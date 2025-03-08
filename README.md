@@ -31,6 +31,8 @@ This is how it looks like, when you will clone the repositories you havent revie
 
 
 This is how it looks like, when u already reviewed homeworks, but acidentally removed `reviewed_repos.txt` file. 
+When the script will find out, that pull request contains `H(h)odnotenie` or `H(h)odnoceni` or `E(e)valuation` keyword, it will be marked as already reviewed and put inside `reviewed_repos.txt` file so it will not go through
+the next time you will run the script.
 
 ![image](https://github.com/user-attachments/assets/b8401c29-fdb6-4d8d-98c0-213198299a8b)
 
@@ -40,6 +42,9 @@ This is how it looks like, when runing script again when homeworks of the studen
 ![image](https://github.com/user-attachments/assets/7e631e68-fab7-450c-96a7-9fd185f6d82a)
 
 #### 7. Run the script to process repositories one by one
+After cloning repositories, you will see something like this  
+
+![image](https://github.com/user-attachments/assets/ecae9817-151b-4943-93e6-5a1b75afd209)
 
 If u run the script using `source` you will be already inside `cloned_repos` folder as mentioned at 5th. step.
 Now you can run another script `run_repos.sh` using either `dev` or `build`  
@@ -48,3 +53,15 @@ Now you can run another script `run_repos.sh` using either `dev` or `build`
  * Runing this should open VSC, open intergrated terminal, write npm install && npm run build, open URL with student's pull request
 ```./run_repos.sh dev```
  * Runing this should open VSC, open intergrated terminal, write npm install && npm run dev, open URL with student's pull request and also server on localhost:3000
+
+So it will look something like this :  
+
+![image](https://github.com/user-attachments/assets/488a0d8f-9201-42d7-b20e-bad5162956bb)
+
+As mentioned earlier, it will open VSC with intergrated terminal where it will put the command either `npm install && npm run build` or `npm install && npm run dev` based on the argument when runing script.
+It will process repositories on by one - it will open also URL with pull request of given student and the live server if the `dev` argument is present.
+You can then review the homework. After you are done, you should press `Enter` key to proceed to the next repository. 
+You should not touch anything during opening etc. because certain things need to be focused to work properly.
+
+After pressing `Enter`, the repository will be added to the `processed_repos.txt` file so it will not go through the next time you will run the script.
+
