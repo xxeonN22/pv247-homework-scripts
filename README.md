@@ -2,6 +2,8 @@
 
 ### Things to be aware of before running scripts - 
 
+Script will **kill all the Chrome instances** - in other words - close all the chrome TABS, because it needs to connect to the Profile and would not work properly without it. It runs in debug mode with given Profile so it will use github session. Without that, you would have to provide passkey or SMS code to log in to the github to be able to enter PV247 site and clone repositories.
+
 When reviewing homework, you should put **H(h)odnotenie** or **H(h)odnoceni** or **E(e)valuation** inside pull request so the script will skip this repository when cloning / skip this repository when processing repositories.
 
 If the script **wont start cloning repositories**, just terminate the current run of the script and **run it again**.
