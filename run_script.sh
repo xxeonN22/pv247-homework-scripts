@@ -71,7 +71,7 @@ if ! pgrep -f "chrome.*remote-debugging-port=9222" > /dev/null; then
                   --disable-gpu 2>/dev/null &
     
     # Give Chrome time to start
-    sleep 3
+    sleep 1
 fi
 
 # Open required URLs in new tabs
