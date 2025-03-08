@@ -13,11 +13,13 @@
 ```./run_script.sh```
 
 #### 5. Run the script with arguments
-If u dont want to be moved to the `cloned_repos` directory automatically after cloning repositories
+If u dont want to be moved to the `cloned_repos` directory automatically after cloning repositories  
+```./run_script.sh "<HOMEWORK_URL>" "<HOMEWORK_FOLDER>" <NUMBER_OF_HOMEWORK>``` e.g.  
 
 ```./run_script.sh "https://pv247-app.vercel.app/lector/homeworks/styling?type=own" "styling" 3```
 
-If u want to be moved to the `cloned_repos` directory automatically after cloning repositories 
+If u want to be moved to the `cloned_repos` directory automatically after cloning repositories   
+```source run_script.sh "<HOMEWORK_URL>" "<HOMEWORK_FOLDER>" <NUMBER_OF_HOMEWORK>``` e.g.  
 
 ```source run_script.sh "https://pv247-app.vercel.app/lector/homeworks/styling?type=own" "styling" 3```
 
