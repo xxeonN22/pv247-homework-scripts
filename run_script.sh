@@ -90,6 +90,11 @@ fi
 echo "✅ Activating virtual environment..."
 source venv/bin/activate
 
+# Install dependencies if not installed
+echo "📦 Installing required Python packages..."
+pip install -r requirements.txt
+
+
 # Run your Python script with dynamic arguments
 echo "🚀 Running script with:"
 echo "   📌 Homework URL: $HOMEWORK_URL"
